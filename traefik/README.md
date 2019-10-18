@@ -16,11 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`v2.0.2-windowsservercore-1809`, `2.0.2-windowsservercore-1809`, `v2.0-windowsservercore-1809`, `2.0-windowsservercore-1809`, `montdor-windowsservercore-1809`, `windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/3d06252965f0028af9de0787b8caa4a1623a9e96/windows/1809/Dockerfile)
--	[`v2.0.2`, `2.0.2`, `v2.0`, `2.0`, `montdor`, `latest`](https://github.com/containous/traefik-library-image/blob/3d06252965f0028af9de0787b8caa4a1623a9e96/alpine/Dockerfile)
--	[`v1.7.18-windowsservercore-1809`, `1.7.18-windowsservercore-1809`, `v1.7-windowsservercore-1809`, `1.7-windowsservercore-1809`, `maroilles-windowsservercore-1809`](https://github.com/containous/traefik-library-image/blob/ade7d8e54cb823e51101a64e5a6ba78fb4de7f49/windows/1809/Dockerfile)
--	[`v1.7.18-alpine`, `1.7.18-alpine`, `v1.7-alpine`, `1.7-alpine`, `maroilles-alpine`](https://github.com/containous/traefik-library-image/blob/ade7d8e54cb823e51101a64e5a6ba78fb4de7f49/alpine/Dockerfile)
--	[`v1.7.18`, `1.7.18`, `v1.7`, `1.7`, `maroilles`](https://github.com/containous/traefik-library-image/blob/ade7d8e54cb823e51101a64e5a6ba78fb4de7f49/scratch/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/traefik build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/traefik.svg?label=arm32v5/traefik%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/traefik/)
 
 # Quick reference
 
@@ -177,23 +175,6 @@ You can find the complete documentation:
 A community support is available at [https://community.containo.us](https://community.containo.us)
 
 A collection of contributions around Traefik can be found at [https://awesome.traefik.io](https://awesome.traefik.io).
-
-# Image Variants
-
-The `traefik` images come in many flavors, each designed for a specific use case.
-
-## `traefik:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-## `traefik:<version>-windowsservercore`
-
-This image is based on [Windows Server Core (`microsoft/windowsservercore`)](https://hub.docker.com/r/microsoft/windowsservercore/). As such, it only works in places which that image does, such as Windows 10 Professional/Enterprise (Anniversary Edition) or Windows Server 2016.
-
-For information about how to get Docker running on Windows, please see the relevant "Quick Start" guide provided by Microsoft:
-
--	[Windows Server Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_server)
--	[Windows 10 Quick Start](https://msdn.microsoft.com/en-us/virtualization/windowscontainers/quick_start/quick_start_windows_10)
 
 # License
 

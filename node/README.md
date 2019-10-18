@@ -16,28 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`8.16.2-jessie`, `8.16-jessie`, `8-jessie`, `carbon-jessie`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/jessie/Dockerfile)
--	[`8.16.2-jessie-slim`, `8.16-jessie-slim`, `8-jessie-slim`, `carbon-jessie-slim`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/jessie-slim/Dockerfile)
--	[`8.16.2-alpine`, `8.16-alpine`, `8-alpine`, `carbon-alpine`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/alpine/Dockerfile)
--	[`8.16.2-onbuild`, `8.16-onbuild`, `8-onbuild`, `carbon-onbuild`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/onbuild/Dockerfile)
--	[`8.16.2-stretch`, `8.16-stretch`, `8-stretch`, `carbon-stretch`, `8.16.2`, `8.16`, `8`, `carbon`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/stretch/Dockerfile)
--	[`8.16.2-stretch-slim`, `8.16-stretch-slim`, `8-stretch-slim`, `carbon-stretch-slim`, `8.16.2-slim`, `8.16-slim`, `8-slim`, `carbon-slim`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/stretch-slim/Dockerfile)
--	[`8.16.2-buster`, `8.16-buster`, `8-buster`, `carbon-buster`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/buster/Dockerfile)
--	[`8.16.2-buster-slim`, `8.16-buster-slim`, `8-buster-slim`, `carbon-buster-slim`](https://github.com/nodejs/docker-node/blob/fa27514a3fd775e1cb6bddac326f6f97dad05fb2/8/buster-slim/Dockerfile)
--	[`12.12.0-alpine`, `12.12-alpine`, `12-alpine`, `current-alpine`, `alpine`](https://github.com/nodejs/docker-node/blob/b1b3f173886f4f4c39952257bab67846ee378836/12/alpine/Dockerfile)
--	[`12.12.0-stretch`, `12.12-stretch`, `12-stretch`, `current-stretch`, `stretch`, `12.12.0`, `12.12`, `12`, `current`, `latest`](https://github.com/nodejs/docker-node/blob/b1b3f173886f4f4c39952257bab67846ee378836/12/stretch/Dockerfile)
--	[`12.12.0-stretch-slim`, `12.12-stretch-slim`, `12-stretch-slim`, `current-stretch-slim`, `stretch-slim`, `12.12.0-slim`, `12.12-slim`, `12-slim`, `current-slim`, `slim`](https://github.com/nodejs/docker-node/blob/b1b3f173886f4f4c39952257bab67846ee378836/12/stretch-slim/Dockerfile)
--	[`12.12.0-buster`, `12.12-buster`, `12-buster`, `current-buster`, `buster`](https://github.com/nodejs/docker-node/blob/b1b3f173886f4f4c39952257bab67846ee378836/12/buster/Dockerfile)
--	[`12.12.0-buster-slim`, `12.12-buster-slim`, `12-buster-slim`, `current-buster-slim`, `buster-slim`](https://github.com/nodejs/docker-node/blob/b1b3f173886f4f4c39952257bab67846ee378836/12/buster-slim/Dockerfile)
--	[`10.16.3-jessie`, `10.16-jessie`, `10-jessie`, `dubnium-jessie`, `lts-jessie`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/jessie/Dockerfile)
--	[`10.16.3-jessie-slim`, `10.16-jessie-slim`, `10-jessie-slim`, `dubnium-jessie-slim`, `lts-jessie-slim`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/jessie-slim/Dockerfile)
--	[`10.16.3-alpine`, `10.16-alpine`, `10-alpine`, `dubnium-alpine`, `lts-alpine`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/alpine/Dockerfile)
--	[`10.16.3-stretch`, `10.16-stretch`, `10-stretch`, `dubnium-stretch`, `lts-stretch`, `10.16.3`, `10.16`, `10`, `dubnium`, `lts`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/stretch/Dockerfile)
--	[`10.16.3-stretch-slim`, `10.16-stretch-slim`, `10-stretch-slim`, `dubnium-stretch-slim`, `lts-stretch-slim`, `10.16.3-slim`, `10.16-slim`, `10-slim`, `dubnium-slim`, `lts-slim`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/stretch-slim/Dockerfile)
--	[`10.16.3-buster`, `10.16-buster`, `10-buster`, `dubnium-buster`, `lts-buster`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/buster/Dockerfile)
--	[`10.16.3-buster-slim`, `10.16-buster-slim`, `10-buster-slim`, `dubnium-buster-slim`, `lts-buster-slim`](https://github.com/nodejs/docker-node/blob/a9c583095d4cf08bbd68f570a1f9a99780820351/10/buster-slim/Dockerfile)
--	[`chakracore-8.11.1`, `chakracore-8.11`, `chakracore-8`](https://github.com/nodejs/docker-node/blob/7db40ed0972a8156e9573672ac908c5c5b67c75b/chakracore/8/Dockerfile)
--	[`chakracore-10.13.0`, `chakracore-10.13`, `chakracore-10`, `chakracore`](https://github.com/nodejs/docker-node/blob/7db40ed0972a8156e9573672ac908c5c5b67c75b/chakracore/10/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/node build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/node.svg?label=arm32v5/node%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/node/)
 
 # Quick reference
 
@@ -79,38 +60,6 @@ Node.js internally uses the Google V8 JavaScript engine to execute code; a large
 # How to use this image
 
 See [How To Use This Image](https://github.com/nodejs/docker-node/blob/master/README.md#how-to-use-this-image) on GitHub for up-to-date documentation.
-
-# Image Variants
-
-The `node` images come in many flavors, each designed for a specific use case.
-
-## `node:<version>`
-
-This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
-
-Some of these tags may have names like buster, jessie, or stretch in them. These are the suite code names for releases of [Debian](https://wiki.debian.org/DebianReleases) and indicate which release the image is based on. If your image needs to install any additional packages beyond what comes with the image, you'll likely want to specify one of these explicitly to minimize breakage when there are new releases of Debian.
-
-This tag is based off of [`buildpack-deps`](https://hub.docker.com/_/buildpack-deps/). `buildpack-deps` is designed for the average user of Docker who has many images on their system. It, by design, has a large number of extremely common Debian packages. This reduces the number of packages that images that derive from it need to install, thus reducing the overall size of all images on your system.
-
-## `node:<version>-slim`
-
-This image does not contain the common packages contained in the default tag and only contains the minimal packages needed to run `node`. Unless you are working in an environment where *only* the `node` image will be deployed and you have space constraints, we highly recommend using the default image of this repository.
-
-## `node:<version>-alpine`
-
-This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
-
-This variant is highly recommended when final image size being as small as possible is desired. The main caveat to note is that it does use [musl libc](http://www.musl-libc.org) instead of [glibc and friends](http://www.etalabs.net/compare_libcs.html), so certain software might run into issues depending on the depth of their libc requirements. However, most software doesn't have an issue with this, so this variant is usually a very safe choice. See [this Hacker News comment thread](https://news.ycombinator.com/item?id=10782897) for more discussion of the issues that might arise and some pro/con comparisons of using Alpine-based images.
-
-To minimize image size, it's uncommon for additional related tools (such as `git` or `bash`) to be included in Alpine-based images. Using this image as a base, add the things you need in your own Dockerfile (see the [`alpine` image description](https://hub.docker.com/_/alpine/) for examples of how to install packages if you are unfamiliar).
-
-## `node:<version>-onbuild`
-
-The `ONBUILD` image variants are deprecated, and their usage is discouraged. For more details, see [docker-library/official-images#2076](https://github.com/docker-library/official-images/issues/2076).
-
-While the `onbuild` variant is really useful for "getting off the ground running" (zero to Dockerized in a short period of time), it's not recommended for long-term usage within a project due to the lack of control over *when* the `ONBUILD` triggers fire (see also [`docker/docker#5714`](https://github.com/docker/docker/issues/5714), [`docker/docker#8240`](https://github.com/docker/docker/issues/8240), [`docker/docker#11917`](https://github.com/docker/docker/issues/11917)).
-
-Once you've got a handle on how your project functions within Docker, you'll probably want to adjust your `Dockerfile` to inherit from a non-`onbuild` variant and copy the commands from the `onbuild` variant `Dockerfile` (moving the `ONBUILD` lines to the end and removing the `ONBUILD` keywords) into your own file so that you have tighter control over them and more transparency for yourself and others looking at your `Dockerfile` as to what it does. This also makes it easier to add additional requirements as time goes on (such as installing more packages before performing the previously-`ONBUILD` steps).
 
 # License
 

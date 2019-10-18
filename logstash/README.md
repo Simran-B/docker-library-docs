@@ -16,8 +16,9 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`7.4.0`](https://github.com/docker-library/logstash/blob/3f6d4dd6f59c7c627aeb2908009935d66b46b3f0/7/Dockerfile)
--	[`6.8.3`](https://github.com/docker-library/logstash/blob/346baa394828982908410b99d4d7fe25e07153e3/6/Dockerfile)
+**WARNING:** THIS IMAGE *IS NOT SUPPORTED* ON THE `arm32v5` ARCHITECTURE
+
+[![arm32v5/logstash build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/logstash.svg?label=arm32v5/logstash%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v5/job/logstash/)
 
 # Quick reference
 
