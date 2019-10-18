@@ -16,10 +16,10 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.20190823.1`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/5cad81cf824efef29c3c9a0d0a995dd8b73abf22/Dockerfile)
--	[`2.0.20190823.1-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/ea2f4afccbbaa445448ba66ad29efec075226e63/Dockerfile)
--	[`2018.03.0.20190826`, `2018.03`, `1`](https://github.com/amazonlinux/container-images/blob/a30a06ba6226455e027f63585deb4d3803ba90fc/Dockerfile)
--	[`2018.03.0.20190826-with-sources`, `2018.03-with-sources`, `1-with-sources`](https://github.com/amazonlinux/container-images/blob/30593e836dad758b8f236426bc709adb7c3f4d87/Dockerfile)
+-	[`2.0.20190823.1`, `2`, `latest`](https://github.com/amazonlinux/container-images/blob/23d169161c6a8484d4da6fc0c9b6ecf0995c5dab/Dockerfile)
+-	[`2.0.20190823.1-with-sources`, `2-with-sources`, `with-sources`](https://github.com/amazonlinux/container-images/blob/e14aa5a0e296d1cd03619e49927392c0eb157dc0/Dockerfile)
+
+[![arm64v8/amazonlinux build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/amazonlinux.svg?label=arm64v8/amazonlinux%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm64v8/job/amazonlinux/)
 
 # Quick reference
 
