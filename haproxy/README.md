@@ -16,18 +16,14 @@ WARNING:
 
 # Supported tags and respective `Dockerfile` links
 
--	[`2.0.7`, `2.0`, `latest`](https://github.com/docker-library/haproxy/blob/2663a97d654b3d46e930ab98fc136443f93bfe82/2.0/Dockerfile)
 -	[`2.0.7-alpine`, `2.0-alpine`, `alpine`](https://github.com/docker-library/haproxy/blob/2663a97d654b3d46e930ab98fc136443f93bfe82/2.0/alpine/Dockerfile)
--	[`1.9.11`, `1.9`, `1`](https://github.com/docker-library/haproxy/blob/9dddade0c1bddeb2346ffef36b97d037c39bd5cf/1.9/Dockerfile)
 -	[`1.9.11-alpine`, `1.9-alpine`, `1-alpine`](https://github.com/docker-library/haproxy/blob/9dddade0c1bddeb2346ffef36b97d037c39bd5cf/1.9/alpine/Dockerfile)
--	[`1.8.21`, `1.8`](https://github.com/docker-library/haproxy/blob/3dbb06aa772a093dab4b88660f8470a4f28de310/1.8/Dockerfile)
 -	[`1.8.21-alpine`, `1.8-alpine`](https://github.com/docker-library/haproxy/blob/af7ea81960c11b73b8a328e65f97df62a389cd10/1.8/alpine/Dockerfile)
--	[`1.7.11`, `1.7`](https://github.com/docker-library/haproxy/blob/f3ff4cd3d32d9eceda4b33183a91d8d276bc08d5/1.7/Dockerfile)
 -	[`1.7.11-alpine`, `1.7-alpine`](https://github.com/docker-library/haproxy/blob/af7ea81960c11b73b8a328e65f97df62a389cd10/1.7/alpine/Dockerfile)
--	[`1.6.14`, `1.6`](https://github.com/docker-library/haproxy/blob/d21ad4557dd2ea46cba1f05a75dcd39ee42c5c56/1.6/Dockerfile)
 -	[`1.6.14-alpine`, `1.6-alpine`](https://github.com/docker-library/haproxy/blob/af7ea81960c11b73b8a328e65f97df62a389cd10/1.6/alpine/Dockerfile)
--	[`1.5.19`, `1.5`](https://github.com/docker-library/haproxy/blob/d21ad4557dd2ea46cba1f05a75dcd39ee42c5c56/1.5/Dockerfile)
 -	[`1.5.19-alpine`, `1.5-alpine`](https://github.com/docker-library/haproxy/blob/af7ea81960c11b73b8a328e65f97df62a389cd10/1.5/alpine/Dockerfile)
+
+[![arm32v6/haproxy build status badge](https://img.shields.io/jenkins/s/https/doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/haproxy.svg?label=arm32v6/haproxy%20%20build%20job)](https://doi-janky.infosiftr.net/job/multiarch/job/arm32v6/job/haproxy/)
 
 # Quick reference
 
@@ -73,7 +69,7 @@ It is also worth checking out the [`examples/` directory from upstream](http://g
 ## Create a `Dockerfile`
 
 ```dockerfile
-FROM haproxy:1.7
+FROM arm32v6/haproxy:1.7
 COPY haproxy.cfg /usr/local/etc/haproxy/haproxy.cfg
 ```
 
@@ -100,7 +96,7 @@ You may need to publish the ports your HAProxy is listening on to the host by sp
 ## Directly via bind mount
 
 ```console
-$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro haproxy:1.7
+$ docker run -d --name my-running-haproxy -v /path/to/etc/haproxy:/usr/local/etc/haproxy:ro arm32v6/haproxy:1.7
 ```
 
 Note that your host's `/path/to/etc/haproxy` folder should be populated with a file named `haproxy.cfg`. If this configuration file refers to any other files within that folder then you should ensure that they also exist (e.g. template files such as `400.http`, `404.http`, and so forth). However, many minimal configurations do not require any supporting files.
@@ -117,13 +113,13 @@ The entrypoint script in the image checks for running the command `haproxy` and 
 
 # Image Variants
 
-The `haproxy` images come in many flavors, each designed for a specific use case.
+The `arm32v6/haproxy` images come in many flavors, each designed for a specific use case.
 
-## `haproxy:<version>`
+## `arm32v6/haproxy:<version>`
 
 This is the defacto image. If you are unsure about what your needs are, you probably want to use this one. It is designed to be used both as a throw away container (mount your source code and start the container to start your app), as well as the base to build other images off of.
 
-## `haproxy:<version>-alpine`
+## `arm32v6/haproxy:<version>-alpine`
 
 This image is based on the popular [Alpine Linux project](http://alpinelinux.org), available in [the `alpine` official image](https://hub.docker.com/_/alpine). Alpine Linux is much smaller than most distribution base images (~5MB), and thus leads to much slimmer images in general.
 
