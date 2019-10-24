@@ -97,7 +97,7 @@ Note: this way of specifying logins only applies to single server installations.
 You can pass arguments to the ArangoDB server by appending them to the end of the Docker command:
 
 ```console
-unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 arangodb --help
+unix> docker run -e ARANGO_RANDOM_ROOT_PASSWORD=1 %%IMAGE%% --help
 ```
 
 The entrypoint script starts the `arangod` binary by default and forwards your arguments.
@@ -105,7 +105,7 @@ The entrypoint script starts the `arangod` binary by default and forwards your a
 You may also start other binaries, such as the ArangoShell:
 
 ```console
-unix> docker run -it arangodb arangosh
+unix> docker run -it %%IMAGE%% arangosh
 ```
 
 Note that you need to set up networking for containers if `arangod` runs in one container and you want to access it with `arangosh` running in another container. It is easier to execute it in the same container instead. Use `docker ps` to find out the container ID / name of a running container:
